@@ -10971,3 +10971,26 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* Bouton CV desktop */
+.cv-button {
+    position: absolute;
+    bottom: 40px;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+}
+
+/* Version mobile */
+@media (max-width: 991px) {
+
+    .cv-button {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
