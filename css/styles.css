@@ -43,7 +43,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 21, 16, 58;
+  --bs-primary-rgb: 165, 142, 130;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -6659,7 +6659,7 @@ textarea.form-control-lg {
 
 .text-bg-primary {
   color: #000 !important;
-  background-color: RGBA(21, 16, 58, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(165, 142, 130, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
