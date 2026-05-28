@@ -11042,3 +11042,19 @@ section.resume-section .resume-section-content {
     }
 
 }
+
+/* =========================
+   REMONTER PHOTO + MENU
+========================= */
+
+@media (min-width: 992px) {
+
+    #sideNav .navbar-brand {
+        margin-top: -40px;
+    }
+
+    #sideNav .navbar-collapse {
+        margin-top: -20px;
+    }
+
+}
