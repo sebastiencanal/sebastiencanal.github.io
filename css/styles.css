@@ -11002,14 +11002,16 @@ section.resume-section .resume-section-content {
 
 @media (min-width: 992px) {
 
-    #experience .d-flex.flex-column.flex-md-row {
+    #experience .d-flex.flex-column.flex-md-row,
+    #education .d-flex.flex-column.flex-md-row {
         position: relative;
         padding-left: 70px;
         margin-bottom: 60px !important;
     }
 
     /* Ligne verticale */
-    #experience .d-flex.flex-column.flex-md-row::before {
+    #experience .d-flex.flex-column.flex-md-row::before,
+    #education .d-flex.flex-column.flex-md-row::before {
         content: "";
         position: absolute;
         left: 20px;
@@ -11020,7 +11022,8 @@ section.resume-section .resume-section-content {
     }
 
     /* Rond */
-    #experience .d-flex.flex-column.flex-md-row::after {
+    #experience .d-flex.flex-column.flex-md-row::after,
+    #education .d-flex.flex-column.flex-md-row::after {
         content: "";
         position: absolute;
         left: 11px;
@@ -11033,7 +11036,8 @@ section.resume-section .resume-section-content {
     }
 
     /* Dernière expérience */
-  #experience .d-flex.flex-column.flex-md-row:last-child::before {
+  #experience .d-flex.flex-column.flex-md-row:last-child::before,
+  #education .d-flex.flex-column.flex-md-row:last-child::before {
     height: calc(100% - 60px);
     }
 
