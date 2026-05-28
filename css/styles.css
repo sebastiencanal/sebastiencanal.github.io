@@ -11038,7 +11038,7 @@ section.resume-section .resume-section-content {
     /* Dernière expérience */
   #experience .d-flex.flex-column.flex-md-row:last-child::before,
   #education .d-flex.flex-column.flex-md-row:last-child::before {
-    height: calc(100% - 60px);
+    height: calc(100% - 25px);
     }
 
 }
