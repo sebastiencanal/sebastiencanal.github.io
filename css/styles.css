@@ -11033,8 +11033,8 @@ section.resume-section .resume-section-content {
     }
 
     /* Dernière expérience */
-    #experience .d-flex.flex-column.flex-md-row:last-child::before {
-        display: none;
+  #experience .d-flex.flex-column.flex-md-row:last-child::before {
+    height: calc(100% - 60px);
     }
 
 }
