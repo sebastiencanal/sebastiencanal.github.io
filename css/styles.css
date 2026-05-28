@@ -11079,3 +11079,50 @@ section.resume-section .resume-section-content {
     }
 
 }
+
+
+/* =========================
+   FIX RESPONSIVE MOBILE
+========================= */
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* Mobile uniquement */
+@media (max-width: 991px) {
+
+    .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .resume-section-content {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Désactive totalement les décalages timeline */
+    #experience .d-flex.flex-column.flex-md-row,
+    #education .d-flex.flex-column.flex-md-row {
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    /* Supprime timeline mobile */
+    #experience .d-flex.flex-column.flex-md-row::before,
+    #experience .d-flex.flex-column.flex-md-row::after,
+    #education .d-flex.flex-column.flex-md-row::before,
+    #education .d-flex.flex-column.flex-md-row::after {
+        display: none !important;
+    }
+
+    /* Fix navbar */
+    #sideNav {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
