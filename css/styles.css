@@ -11047,14 +11047,35 @@ section.resume-section .resume-section-content {
    REMONTER PHOTO + MENU
 ========================= */
 
+
 @media (min-width: 992px) {
 
-    #sideNav .navbar-brand {
-        margin-top: -20px;
+    /* Sidebar */
+    #sideNav {
+        padding-top: 2rem;
     }
 
+    /* Photo */
+    #sideNav .navbar-brand {
+        margin-top: 0;
+    }
+
+    /* Menu */
     #sideNav .navbar-collapse {
-        margin-top: -5px;
+        margin-top: 1rem;
+    }
+
+}
+
+/* =========================
+   MENU MOBILE FIX
+========================= */
+
+@media (max-width: 991px) {
+
+    #sideNav {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 
 }
