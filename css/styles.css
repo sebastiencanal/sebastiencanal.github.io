@@ -10994,3 +10994,46 @@ section.resume-section .resume-section-content {
     }
 
 }
+
+
+/* =========================
+   TIMELINE EXPERIENCE
+========================= */
+
+@media (min-width: 992px) {
+
+    #experience .d-flex.flex-column.flex-md-row {
+        position: relative;
+        padding-left: 60px;
+    }
+
+    /* Ligne verticale */
+    #experience .d-flex.flex-column.flex-md-row::before {
+        content: "";
+        position: absolute;
+        left: 18px;
+        top: 35px;
+        width: 2px;
+        height: calc(100% + 30px);
+        background-color: #826154;
+    }
+
+    /* Rond */
+    #experience .d-flex.flex-column.flex-md-row::after {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: white;
+        border: 4px solid #826154;
+    }
+
+    /* Pas de ligne après le dernier */
+    #experience .d-flex.flex-column.flex-md-row:last-child::before {
+        display: none;
+    }
+
+}
