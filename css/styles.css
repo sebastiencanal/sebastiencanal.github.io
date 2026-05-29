@@ -11167,7 +11167,7 @@ body {
 .tools-logos {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 24px;
 
     margin-bottom: 18px;
     flex-wrap: wrap;
@@ -11189,6 +11189,11 @@ body {
 /* Logo VMware plus petit */
 .vmware-logo {
     height: 28px !important;
+}
+
+/* Logo O365 légèrement plus gros */
+.o365-logo {
+    height: 44px !important;
 }
 
 /* =========================
