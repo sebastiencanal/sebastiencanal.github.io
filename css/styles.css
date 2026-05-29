@@ -11049,18 +11049,24 @@ section.resume-section .resume-section-content {
 
 @media (min-width: 992px) {
 
-    /* Hauteur Photo */
+    /* Photo */
     #sideNav .navbar-brand {
         margin-top: 25px;
     }
 
-    /* Hauteur Menu */
+    /* Bloc menu */
     #sideNav .navbar-collapse {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-grow: 1;
-        margin-top: -65px;
+        margin-top: -70px;
+    }
+
+    /* Menu centré */
+    #sideNav .navbar-nav {
+        margin: auto 0;
+    }
+
+    /* Espacement entre les liens */
+    #sideNav .nav-item {
+        margin: 8px 0;
     }
 
 }
