@@ -84,7 +84,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#education">
+                        <a class="nav-link js-scroll-trigger" href="#formation">
                             Formation
                         </a>
                     </li>
@@ -443,8 +443,8 @@
 
             <hr class="m-0" />
 
-            <!-- EDUCATION -->
-            <section class="resume-section" id="education">
+            <!-- formation -->
+            <section class="resume-section" id="formation">
 
                 <div class="resume-section-content">
 
@@ -807,5 +807,27 @@
         <!-- Core theme JS -->
         <script src="js/scripts.js"></script>
 
+        if (pageYOffset >= sectionTop) {
+                current = section.getAttribute("id");
+            }
+
+        });
+
+        navLinks.forEach(link => {
+
+            link.classList.remove("active");
+
+            if (link.getAttribute("href") === "#" + current) {
+                link.classList.add("active");
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+        
     </body>
 </html>
