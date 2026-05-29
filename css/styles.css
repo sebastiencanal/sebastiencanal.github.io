@@ -11049,24 +11049,35 @@ section.resume-section .resume-section-content {
 
 @media (min-width: 992px) {
 
+    /* Sidebar */
+    #sideNav {
+        display: flex;
+        flex-direction: column;
+    }
+
     /* Photo */
     #sideNav .navbar-brand {
         margin-top: 25px;
     }
 
-    /* Bloc menu */
+    /* Zone menu */
     #sideNav .navbar-collapse {
-        margin-top: -35px;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    /* Menu centré */
+    /* Liste menu */
     #sideNav .navbar-nav {
-        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    /* Espacement entre les liens */
+    /* Espacement liens */
     #sideNav .nav-item {
-        margin: 7px 0;
+        margin: 10px 0;
     }
 
 }
