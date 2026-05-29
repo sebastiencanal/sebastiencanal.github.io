@@ -805,10 +805,24 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <!-- Core theme JS -->
-        <script src="js/scripts.js"></script>
+        <script>
 
-        if (pageYOffset >= sectionTop) {
-                current = section.getAttribute("id");
+document.addEventListener("DOMContentLoaded", () => {
+
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("#sideNav .nav-link");
+
+    window.addEventListener("scroll", () => {
+
+        let currentSection = "";
+
+        sections.forEach(section => {
+
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            if (window.scrollY >= sectionTop - 250) {
+                currentSection = section.getAttribute("id");
             }
 
         });
@@ -817,7 +831,9 @@
 
             link.classList.remove("active");
 
-            if (link.getAttribute("href") === "#" + current) {
+            const href = link.getAttribute("href").replace("#", "");
+
+            if (href === currentSection) {
                 link.classList.add("active");
             }
 
