@@ -11056,7 +11056,7 @@ section.resume-section .resume-section-content {
 
     /* Bloc menu */
     #sideNav .navbar-collapse {
-        margin-top: -70px;
+        margin-top: -35px;
     }
 
     /* Menu centré */
@@ -11066,7 +11066,7 @@ section.resume-section .resume-section-content {
 
     /* Espacement entre les liens */
     #sideNav .nav-item {
-        margin: 8px 0;
+        margin: 7px 0;
     }
 
 }
