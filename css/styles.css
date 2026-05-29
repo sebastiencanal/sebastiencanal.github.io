@@ -11142,3 +11142,10 @@ body {
     }
 
 }
+
+
+/* Rubrique active du menu */
+#sideNav .nav-link.active {
+    color: #ffffff !important;
+    font-weight: 700;
+}
