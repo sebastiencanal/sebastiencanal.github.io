@@ -873,31 +873,64 @@ document.addEventListener("DOMContentLoaded", () => {
 <script>
 
 /* =========================
-   FERMETURE MENU MOBILE
+   MENU MOBILE AUTO-CLOSE
 ========================= */
 
 document.addEventListener("DOMContentLoaded", function () {
 
     const navLinks = document.querySelectorAll('#sideNav .nav-link');
-    const menuToggle = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    /* Bootstrap collapse instance */
+    const getCollapse = () => {
+        return bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+    };
+
+    /* =========================
+       Fermeture au clic menu
+    ========================== */
 
     navLinks.forEach(link => {
 
         link.addEventListener('click', () => {
 
             if (window.innerWidth < 992) {
+                getCollapse().hide();
+            }
 
-                const bsCollapse =
-                    bootstrap.Collapse.getInstance(navbarCollapse);
+        });
 
-                if (bsCollapse) {
-                    bsCollapse.hide();
+    });
+
+    /* =========================
+       Fermeture au scroll mobile
+    ========================== */
+
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", () => {
+
+        if (window.innerWidth < 992) {
+
+            const currentScroll =
+                window.pageYOffset ||
+                document.documentElement.scrollTop;
+
+            /* Si menu ouvert */
+            if (navbarCollapse.classList.contains("show")) {
+
+                /* Détection mouvement scroll */
+                if (Math.abs(currentScroll - lastScrollTop) > 10) {
+                    getCollapse().hide();
                 }
 
             }
 
-        });
+            lastScrollTop = currentScroll <= 0
+                ? 0
+                : currentScroll;
+
+        }
 
     });
 
