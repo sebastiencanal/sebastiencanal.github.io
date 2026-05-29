@@ -11044,25 +11044,23 @@ section.resume-section .resume-section-content {
 }
 
 /* =========================
-   REMONTER PHOTO + MENU
+   SIDEBAR DESKTOP
 ========================= */
-
 
 @media (min-width: 992px) {
 
-    /* Sidebar */
-    #sideNav {
-        padding-top: 2rem;
-    }
-
-    /* Photo */
+    /* Photo reste en haut */
     #sideNav .navbar-brand {
         margin-top: 0;
     }
 
-    /* Menu */
+    /* Menu centré verticalement */
     #sideNav .navbar-collapse {
-        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        margin-top: 0;
     }
 
 }
