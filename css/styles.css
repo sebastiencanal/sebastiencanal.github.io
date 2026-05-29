@@ -11186,6 +11186,11 @@ body {
     transform: translateY(-2px);
 }
 
+/* Logo VMware plus petit */
+.vmware-logo {
+    height: 28px !important;
+}
+
 /* =========================
    LOGOS OUTILS MOBILE
 ========================= */
