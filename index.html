@@ -887,6 +887,28 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     /* =========================
+   Fermeture clic hors menu
+========================= */
+
+document.addEventListener("click", function (event) {
+
+    if (window.innerWidth < 992) {
+
+        const isMenuOpen =
+            navbarCollapse.classList.contains("show");
+
+        const clickedInsideMenu =
+            event.target.closest("#sideNav");
+
+        if (isMenuOpen && !clickedInsideMenu) {
+            getCollapse().hide();
+        }
+
+    }
+
+});
+    
+    /* =========================
        Fermeture au clic menu
     ========================== */
 
