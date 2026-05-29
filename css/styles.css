@@ -11158,3 +11158,30 @@ body {
     color: #ffffff !important;
     font-weight: 700;
 }
+
+
+/* =========================
+   LOGOS OUTILS
+========================= */
+
+.tools-logos {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.tools-logos img {
+    height: 38px;
+    width: auto;
+
+    object-fit: contain;
+
+    transition: 0.2s ease;
+}
+
+.tools-logos img:hover {
+    transform: translateY(-2px);
+}
