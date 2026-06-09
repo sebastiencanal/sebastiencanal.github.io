@@ -11281,36 +11281,4 @@ body {
 }
 
 
-/* =========================
-  PLACER LES DATES EN HAUT DANS LA VERSION MOBILE
-========================= */
-@media (max-width:767.98px){
-
-    .d-flex.flex-column.flex-md-row.justify-content-between{
-
-        display:grid !important;
-
-        grid-template-areas:
-            "title"
-            "date"
-            "content";
-
-    }
-
-    .flex-grow-1{
-
-        grid-area:title;
-
-    }
-
-    .flex-shrink-0{
-
-        grid-area:date;
-
-        margin-top:6px;
-        margin-bottom:20px;
-
-    }
-
-}
 
