@@ -11281,4 +11281,33 @@ body {
 }
 
 
+/* Date mobile */
+.experience-date-mobile{
+    display:none;
+}
+
+/* Mobile */
+@media (max-width:991.98px){
+
+    .experience-date-mobile{
+
+        display:block;
+
+        color:#826154;
+
+        font-size:0.95rem;
+
+        font-weight:600;
+
+        margin-top:-10px;
+
+        margin-bottom:20px;
+    }
+
+    .resume-section .flex-shrink-0{
+
+        display:none;
+    }
+
+}
 
