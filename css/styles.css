@@ -11367,3 +11367,98 @@ body {
 
 }
 
+/*=========================
+  CONTACT
+=========================*/
+
+.contact-form{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.5fr;
+
+    gap:40px;
+
+}
+
+
+.contact-form label{
+
+    color:#826154;
+
+    font-weight:600;
+
+}
+
+
+.contact-form .form-control{
+
+    border-radius:15px;
+
+    padding:15px;
+
+}
+
+
+.message-box{
+
+    min-height:300px;
+
+    resize:vertical;
+
+}
+
+
+.contact-form .btn-primary{
+
+    background:#826154;
+
+    border-color:#826154;
+
+    border-radius:15px;
+
+    padding:12px;
+
+}
+
+
+.contact-form .btn-primary:hover{
+
+    background:#876e63;
+
+    border-color:#876e63;
+
+}
+
+
+/* Mobile */
+
+@media (max-width:991px){
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .message-box{
+
+        min-height:200px;
+
+    }
+
+}
+
