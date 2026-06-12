@@ -101,6 +101,12 @@
                         </a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
                 <p>
                     
                 </p>   
@@ -1037,53 +1043,141 @@
 
             </section>
 
+             
+            <!-- Formulaire de contact-->   
+            
+            <hr class="m-0" />
+
+            <section class="resume-section" id="contact">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">
+                        Contact
+                    </h2>
+
+                    <form class="contact-form">
+           
+                        <div class="contact-grid">
+               
+                            <!-- Colonne gauche -->           
+                            <div class="contact-left">
+                                <div class="mb-4">
+                                    <label class="form-label">
+                                        
+                                        Nom et prénom
+                                        
+                                    </label>
+                                    <input type="text"                           
+                                        class="form-control"                              
+                                        placeholder="Votre nom et prénom">
+                   
+                                </div>
+                   
+                                <div class="mb-4">                    
+                                    <label class="form-label">
+                           
+                                        Email
+                      
+                                    </label>
+                       
+                                    <input type="email"                             
+                                        class="form-control"                           
+                                        placeholder="Votre adresse email">                                    
+                  
+                                </div>
+                   
+                                <div class="mb-4">                       
+                                    <label class="form-label">
+                          
+                                        Objet
+                      
+                                    </label>
+                      
+                                    <input type="text"                               
+                                        class="form-control"                              
+                                        placeholder="Objet du message">
+                  
+                                </div>
+                   
+                                <button type="submit"                          
+                                    class="btn btn-primary">
+                       
+                                    Envoyer
+                  
+                                </button>
+               
+                            </div>
+               
+                            <!-- Colonne droite -->
+               
+                            <div class="contact-right">
+                   
+                                <label class="form-label">
+                       
+                                    Message
+                                    
+                                </label>                    
+                                <textarea                          
+                                    class="form-control message-box"                           
+                                    placeholder="Votre message...">                   
+                                </textarea>
+                
+                            </div>
+            
+                        </div>
+       
+                    </form>
+    
+                </div>
+
+            </section>        
+       
         </div>
 
+        
         <!-- Bootstrap core JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <!-- Core theme JS -->
         <script>
 
-document.addEventListener("DOMContentLoaded", () => {
 
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("#sideNav .nav-link");
+            document.addEventListener("DOMContentLoaded", () => {
+                const sections = document.querySelectorAll("section");
+                const navLinks = document.querySelectorAll("#sideNav .nav-link");
 
-    window.addEventListener("scroll", () => {
+                window.addEventListener("scroll", () => {
+                    let currentSection = "";
+                    sections.forEach(section => {
 
-        let currentSection = "";
+                        const sectionTop = section.offsetTop;
+          
+                        const sectionHeight = section.offsetHeight;
 
-        sections.forEach(section => {
+                        if (window.scrollY >= sectionTop - 250) {
+              
+                            currentSection = section.getAttribute("id");
+                        }
+        
+                    });
 
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
+                    navLinks.forEach(link => {
+           
+                        link.classList.remove("active");
+           
+                        const href = link.getAttribute("href").replace("#", "");
+          
+                        if (href === currentSection) {
+               
+                            link.classList.add("active");
+                        }
+       
+                    });
 
-            if (window.scrollY >= sectionTop - 250) {
-                currentSection = section.getAttribute("id");
-            }
+                });
 
-        });
-
-        navLinks.forEach(link => {
-
-            link.classList.remove("active");
-
-            const href = link.getAttribute("href").replace("#", "");
-
-            if (href === currentSection) {
-                link.classList.add("active");
-            }
-
-        });
-
-    });
-
-});
-
-</script>
-
-<script>
+            });
+        </script>
+        <script>
 
 /* =========================
    MENU MOBILE AUTO-CLOSE
