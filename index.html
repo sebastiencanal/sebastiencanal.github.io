@@ -1054,7 +1054,10 @@
                         Contact
                     </h2>
 
-                    <form class="contact-form">
+                    <form
+                        action="https://formspree.io/f/mnjygokl"
+                        method="POST"
+                        class="contact-form">
            
                         <div class="contact-grid">
                
@@ -1066,9 +1069,12 @@
                                         Nom et prénom
                                         
                                     </label>
-                                    <input type="text"                           
-                                        class="form-control"                              
-                                        placeholder="Votre nom et prénom">
+                                    
+                                    <input type="text"
+                                        name="Nom"
+                                        class="form-control"
+                                        placeholder="Votre nom et prénom"
+                                        required>
                    
                                 </div>
                    
@@ -1079,9 +1085,11 @@
                       
                                     </label>
                        
-                                    <input type="email"                             
-                                        class="form-control"                           
-                                        placeholder="Votre adresse email">                                    
+                                    <input type="email"     
+                                        name="Email"
+                                        class="form-control"
+                                        placeholder="Votre adresse email"
+                                        required>                                 
                   
                                 </div>
                    
@@ -1092,9 +1100,11 @@
                       
                                     </label>
                       
-                                    <input type="text"                               
-                                        class="form-control"                              
-                                        placeholder="Objet du message">
+                                   <input type="text"      
+                                       name="Objet"     
+                                       class="form-control"     
+                                       placeholder="Objet du message"     
+                                       required>
                   
                                 </div>
                    
@@ -1115,10 +1125,13 @@
                        
                                     Message
                                     
-                                </label>                    
-                                <textarea                          
-                                    class="form-control message-box"                           
-                                    placeholder="Votre message...">                   
+                                </label>  
+                                
+                                <textarea      
+                                    name="Message"       
+                                    class="form-control message-box"       
+                                    placeholder="Votre message..."   
+                                    required>
                                 </textarea>
                 
                             </div>
