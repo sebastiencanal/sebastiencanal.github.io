@@ -32,3 +32,73 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// ===========================================
+// Formulaire de contact
+// ===========================================
+
+const form = document.getElementById("contact-form");
+
+if (form) {
+
+    form.addEventListener("submit", async function (e) {
+
+        e.preventDefault();
+
+        const button = document.getElementById("submit-btn");
+        const text = document.getElementById("btn-text");
+        const spinner = document.getElementById("spinner");
+
+        spinner.style.display = "inline-block";
+
+        text.innerHTML = "Envoi en cours...";
+
+        button.classList.add("loading");
+
+        const data = new FormData(form);
+
+        try {
+
+            const response = await fetch(form.action, {
+
+                method: "POST",
+
+                body: data,
+
+                headers: {
+                    Accept: "application/json"
+                }
+
+            });
+
+            spinner.style.display = "none";
+
+            if (response.ok) {
+
+                form.reset();
+
+                button.classList.remove("loading");
+
+                button.classList.remove("btn-primary");
+
+                button.classList.add("btn-success");
+
+                text.innerHTML = "✅ Votre message a bien été envoyé";
+
+            }
+
+        }
+
+        catch (error) {
+
+            spinner.style.display = "none";
+
+            button.classList.remove("loading");
+
+            text.innerHTML = "Erreur lors de l'envoi";
+
+        }
+
+    });
+
+}
