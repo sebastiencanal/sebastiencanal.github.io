@@ -11525,27 +11525,28 @@ body {
 }
 
 /* =========================
-   Formulaire responsive : retirer les colonnes du formulaire contact
+   Responsive formulaire
 ========================= */
 
-@media (max-width: 991px){
+@media (max-width:991px){
 
     .contact-grid{
-        display:flex;
-        flex-direction:column;
+
+        grid-template-columns:1fr;
+
     }
 
-    .contact-left{
-        order:1;
+    .message-box{
+
+        min-height:200px;
+
     }
 
-    .contact-right{
-        order:2;
-    }
+}
 
-    #submit-btn{
-        order:3;
-        margin-top:20px;
-    }
+
+#submit-btn{
+
+    margin-top:25px;
 
 }
