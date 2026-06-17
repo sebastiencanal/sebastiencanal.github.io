@@ -11415,12 +11415,23 @@ body {
 
 .message-box{
 
-    min-height:300px;
+    min-height:350px;
 
     resize:vertical;
 
+    padding:15px;
+
+    vertical-align:top;
+
+    line-height:1.5;
+
 }
 
+.contact-right textarea{
+
+    display:block;
+
+}
 
 .contact-form .btn-primary{
 
