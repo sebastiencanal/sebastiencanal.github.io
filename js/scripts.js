@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', event => {
 // ===========================================
 
 const form = document.getElementById("contact-form");
-
+console.log(form);
 if (form) {
 
     form.addEventListener("submit", async function (e) {
