@@ -11473,3 +11473,15 @@ body {
 
 }
 
+/* ======================
+   Animation bouton formulaire
+====================== */
+
+#spinner{
+    display:none;
+}
+
+.loading{
+    pointer-events:none;
+    opacity:.8;
+}
