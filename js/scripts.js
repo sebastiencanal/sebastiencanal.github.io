@@ -41,6 +41,8 @@ if (form) {
 
     form.addEventListener("submit", async function (e) {
 
+       console.log("SUBMIT INTERCEPTE");
+        
         e.preventDefault();
 
         const button = document.getElementById("submit-btn");
