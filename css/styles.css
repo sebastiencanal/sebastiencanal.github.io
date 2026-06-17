@@ -11415,15 +11415,15 @@ body {
 
 .message-box{
 
-    min-height:400px;
-
-    resize:vertical;
+    min-height:350px;
 
     padding:15px;
 
-    vertical-align:top;
+    resize:vertical;
 
     line-height:1.5;
+
+    text-align:left;
 
 }
 
@@ -11484,4 +11484,29 @@ body {
 .loading{
     pointer-events:none;
     opacity:.8;
+}
+
+
+/* ======================
+   Bouton "envoyer" en blanc du formulaire contact
+====================== */
+
+#submit-btn{
+
+    color:white !important;
+
+    font-weight:700;
+
+    border-radius:15px;
+
+    padding:12px 28px;
+
+    transition:all .3s ease;
+
+}
+
+#submit-btn:hover{
+
+    color:white !important;
+
 }
