@@ -11510,3 +11510,16 @@ body {
     color:white !important;
 
 }
+
+
+
+#submit-btn,
+#submit-btn span,
+#submit-btn:hover,
+#submit-btn:focus,
+#submit-btn:active {
+
+    color: #ffffff !important;
+    font-weight: 700 !important;
+
+}
