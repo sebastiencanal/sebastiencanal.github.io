@@ -11550,3 +11550,23 @@ body {
     margin-top:25px;
 
 }
+
+/* =========================
+   Alignement du champ message
+========================= */
+
+.contact-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+}
+
+.contact-right .form-label{
+
+    margin-bottom:1.5rem;
+
+}
