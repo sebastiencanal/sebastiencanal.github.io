@@ -31,8 +31,6 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-});
-
 // ===========================================
 // Formulaire de contact
 // ===========================================
@@ -85,6 +83,15 @@ if (form) {
 
                 text.innerHTML = "✅ Votre message a bien été envoyé";
 
+                setTimeout(() => {
+
+                    button.classList.remove("btn-success");
+                    button.classList.add("btn-primary");
+
+                    text.innerHTML = "Envoyer";
+
+                }, 5000);
+
             }
 
         }
@@ -102,3 +109,5 @@ if (form) {
     });
 
 }
+    
+});
