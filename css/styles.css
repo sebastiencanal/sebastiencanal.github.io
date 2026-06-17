@@ -11523,3 +11523,29 @@ body {
     font-weight: 700 !important;
 
 }
+
+/* =========================
+   Formulaire responsive : retirer les colonnes du formulaire contact
+========================= */
+
+@media (max-width: 991px){
+
+    .contact-grid{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .contact-left{
+        order:1;
+    }
+
+    .contact-right{
+        order:2;
+    }
+
+    #submit-btn{
+        order:3;
+        margin-top:20px;
+    }
+
+}
